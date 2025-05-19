@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PhishGuard</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 PhishGuard</h1>
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider round"></span>
+    </label>
+
+    <textarea id="msgInput" placeholder="Paste your message here..."></textarea>
+    <button id="checkBtn">Check Message</button>
+
+    <div id="result" class="hidden">
+      <h3>Result</h3>
+      <p id="label"></p>
+      <p id="explanation"></p>
+      <ul id="emailsList"></ul>
+    </div>
+
+    <div id="history">
+      <h3>Scan History</h3>
+      <ul id="historyList"></ul>
+    </div>
+
+    <footer>💡 Stay safe online!</footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
